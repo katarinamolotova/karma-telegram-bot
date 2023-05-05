@@ -24,7 +24,6 @@ enum Reaction {
 
 public class Bot extends TelegramLongPollingBot {
     private static final Map <User, Byte> base = new HashMap<>();
-    private static final Map <User, Long> person_chat_base = new HashMap<>();
     private static final List <User> ban_list= new ArrayList<>();
     private static boolean first_start = true;
 
@@ -54,12 +53,6 @@ public class Bot extends TelegramLongPollingBot {
             msg_was_deleted = true;
         }
 
-//        if (getBalance(update.getMessage().getFrom()) < (byte)(-50)) {
-//            sendText(update.getMessage().getChatId(), "Упс");
-//            sendText(update.getMessage().getFrom().getId(), "Ну и карма у вас мешок с костями");
-//            deleteMessage(update.getMessage());
-//        }
-
         if(!base.containsKey(update.getMessage().getFrom())
                 && (!update.getMessage().getFrom().getId().equals(update.getMessage().getChatId()))) {
 
@@ -83,7 +76,12 @@ public class Bot extends TelegramLongPollingBot {
                     sendText(tmp.getId(), "Вы разблочены! :)");
                 }
             }
-            person_chat_base.put(update.getMessage().getFrom(), update.getMessage().getChatId());
+        }
+
+        if (getBalance(update.getMessage().getFrom()) < (byte)(-50)) {
+            sendText(update.getMessage().getChatId(), "Упс");
+            sendText(update.getMessage().getFrom().getId(), "Ну и карма у вас мешок с костями");
+            deleteMessage(update.getMessage());
         }
 
         if(isReplyMessage(update.getMessage()) && !msg_was_deleted) {
