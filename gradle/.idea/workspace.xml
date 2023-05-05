@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ca539c8-c9c1-4a27-a4c2-a1fea3228e81" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/org/example/HibernateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/org/example/bot/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/org/example/bot/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/org/example/entity/MessagesEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2PNhHh16Dun4GLI8V3MBjiALyhH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/mihailkuhtacev/Desktop/bot/karma-telegram-bot/gradle",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ca539c8-c9c1-4a27-a4c2-a1fea3228e81" name="Changes" comment="" />
+      <created>1683303360901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683303360901</updated>
+    </task>
+    <servers />
+  </component>
+</project>

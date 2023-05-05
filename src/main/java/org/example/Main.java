@@ -1,33 +1,13 @@
 package org.example;
 
-import org.example.entity.MessagesEntity;
-import org.hibernate.Session;
+import org.example.bot.Bot;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class Main {
-//    public static void main(String[] args) throws TelegramApiException {
-    public static void main(String[] args) {
-
-        // bot example
+    public static void main(String[] args) throws TelegramApiException {
         TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
         botsApi.registerBot(new Bot());
-        
-        
-
-        // Hibernate function example for add data in DB
-
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        MessagesEntity messagesEntity = new MessagesEntity();
-        session.beginTransaction();
-        MessagesEntity messagesEntity = new MessagesEntity();
-        messagesEntity.setChatId(1);
-        messagesEntity.setUserId(1);
-        messagesEntity.setUserName("ivan");
-        messagesEntity.setMsgId(1);
-        messagesEntity.setId((long)1);
-        session.persist(messagesEntity);
-        session.getTransaction().commit();
-        session.close();
-        HibernateUtil.shutdown();
-
     }
 }
